@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+</head>
+<body>
+<!--    <br></br>-->
+    <button id="home" style="cursor: pointer;margin-left: 10px;color: red; font-weight: bold;margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Home</button>
+    <button id="heating" style="cursor: pointer;margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Heating & Air-Conditioning</button>
+    <button id="ventilation" style="cursor: pointer;margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Ventilation</button>
+    <button id="airConditioning" style="cursor: pointer;margin-right: 0px;font-size: 20px; background-color: white; border-color: white; border-width: 0px"></button>
+    <button id="lighting" style="cursor: pointer;margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Lighting</button>
+    <button id="buildingInfo" style="cursor: pointer;font-size: 20px; margin-right: 10px; background-color: white; border-color: white; border-width: 0px">Building Info</button>
+    <button id="info" style="cursor: pointer;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Team Info</button>
+    <br></br>
+    <div>
+        <img src="http://static.gigapan.com/gigapans0/73790/images/73790-936x360.jpg">
+        <div id="skyLight" style="position: absolute;text-align:center; width: 100px;height: 20px; top: 70px; left:200px; background-color: cornflowerblue; color: blue;border-style: solid;border-width: 1px">Sky Light</div>
+        <div id="skyLightInfo" style="display: none; position: absolute;top: 92px; left:200px;border-style: solid;border-width: 1px; border-width: 1px; background-color: white">Component: sky ..<br/>Function: bring daylight</div>
+        <div id="coffee" style="position: absolute;text-align:center; width: 100px;height: 20px; top: 275px; left:250px; background-color: cornflowerblue; color: blue;border-style: solid;border-width: 1px">Coffee</div>
+        <div id="controlPanel" style="position: absolute;text-align:center; width: 100px;height: 20px; top: 275px; left:450px; background-color: cornflowerblue; color: blue;border-style: solid;border-width: 1px">Control Panel</div>
+        <div id="office" style="position: absolute;text-align:center; width: 100px;height: 20px; top: 275px; left:750px; background-color: cornflowerblue; color: blue;border-style: solid;border-width: 1px">Office</div>
+        <div id="officeInfo" style="display: none; position: absolute;top: 297px; left:750px;border-style: solid;border-width: 1px; border-width: 1px; background-color: white">Component: individual..<br/>Function:....</div>
+
+    </div>
+
+    <div style="font-size: 10px">The Solar House and Intelligent Workplace at Carnegie Mellon University, Pittsburgh, PA</div>
+    <div style="font-size: 10px">Source: http://gigapan.com/gigapans?tags=intelligent</div>
+<!--    <img src="http://static.gigapan.com/gigapans0/73790/images/73790-936x360.jpg" width="1872" height="720">-->
+    <script>
+        var sL = document.getElementById("skyLight")
+        var sLI = document.getElementById("skyLightInfo")
+        var officeIndi = document.getElementById("office")
+        var officeInfo = document.getElementById("officeInfo")
+
+        sL.onmouseenter = function (){
+            sLI.style.display = "block"
+        }
+        sL.onmouseleave = function(){
+            sLI.style.display = "none"
+        }
+        officeIndi.onmouseenter = function (){
+            officeInfo.style.display = "block"
+        }
+        officeIndi.onmouseleave = function(){
+            officeInfo.style.display = "none"
+        }
+
+
+    </script>
+    <script>
+        function changeColor (v1,v2,v3,v4,v5,v6,v7){
+    v1.style.color = "red";
+    v1.style.fontWeight = "bold"
+    v2.style.color = "black";
+    v2.style.fontWeight = "normal"
+    v3.style.color = "black";
+    v3.style.fontWeight = "normal"
+    v4.style.color = "black";
+    v4.style.fontWeight = "normal"
+    v5.style.color = "black";
+    v5.style.fontWeight = "normal"
+    v6.style.color = "black";
+    v6.style.fontWeight = "normal"
+    v7.style.color = "black";
+    v7.style.fontWeight = "normal"
+}
+
+var homeTitle = document.getElementById("home")
+var heatingTitle = document.getElementById("heating")
+var ventilationTitle = document.getElementById("ventilation")
+var airContioningTitle = document.getElementById("airConditioning")
+var lightingTitle = document.getElementById("lighting")
+var buildingInfoTitle = document.getElementById("buildingInfo")
+var infoTitle = document.getElementById("info")
+
+document.getElementById("home").onclick = function(){
+    changeColor(homeTitle, heatingTitle, ventilationTitle, airContioningTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "Display.html"
+}
+document.getElementById("heating").onclick = function(){
+    changeColor(heatingTitle,homeTitle, ventilationTitle, airContioningTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "HeatingTwoPanel.html"
+}
+document.getElementById("ventilation").onclick = function(){
+    changeColor(ventilationTitle, homeTitle, heatingTitle, airContioningTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "Ventilation.html"
+}
+document.getElementById("airConditioning").onclick = function(){
+    changeColor(airContioningTitle, homeTitle, heatingTitle, ventilationTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "AirConditioning.html"
+}
+document.getElementById("lighting").onclick = function(){
+    changeColor(lightingTitle, homeTitle, heatingTitle, ventilationTitle, airContioningTitle,buildingInfoTitle, infoTitle)
+    window.location.href = "lighting page.html"
+}
+
+document.getElementById("buildingInfo").onclick = function(){
+    changeColor(buildingInfoTitle, infoTitle, homeTitle, heatingTitle, ventilationTitle, airContioningTitle, lightingTitle)
+    window.location.href = "BuildingInfo.html"
+}
+
+document.getElementById("info").onclick = function(){
+    changeColor(infoTitle, homeTitle, heatingTitle, ventilationTitle, airContioningTitle, buildingInfoTitle, lightingTitle)
+    window.location.href = "Info.html"
+}
+    </script>
+
+
+
+</body>
+</html>

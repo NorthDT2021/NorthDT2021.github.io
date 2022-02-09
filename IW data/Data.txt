@@ -1,0 +1,25 @@
+what we have:
+
+1. water system: supply water temperature, return water temperature, flow rate------can caculate load/energy consumption???(how to get EUI?)
+
+2. air syetem():dry bulb control temp, dew bulb control temp
+
+3. lighting:no data
+
+4. IEQ:outdoor air temp, indoor air temp(avg&each zone), RH(avg&each zone), CO2(each zone)
+
+
+Enegy: Cooling/heating demand(what's the unit?)
+
+what we want:
+
+1. secmo SA,RA,OA,flowrate?
+2. avg co2?
+3. energy(heating, cooling) consumption data?
+4. dry bulb control temp, dew bulb control temp useful or not?
+5. illuminance?
+
+
+
+
+

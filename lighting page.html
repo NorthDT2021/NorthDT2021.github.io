@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lighting</title>
+    <style>
+      #img1{
+        position: absolute;
+        height: 400px;
+        width: 600px;
+        /*left:200;*/
+        /*top:0;*/
+        /*display: inline;*/
+      }
+      #img2{
+        position: absolute;
+        height: 400px;
+        width: 600px;
+        /*left:200;*/
+        /*top:0;*/
+        display: none;
+      }
+      div.relative {
+        position: relative;
+        width: 600px;
+        height: 400px;
+      }
+      div.relative1{
+        position: relative;
+      }
+      p.relative{
+        position: relative;
+        top:550px;
+        left:500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="home" style="cursor: pointer;margin-left: 10px; margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Home</button>
+    <button id="heating" style="cursor: pointer;margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Heating & Air-Conditioning</button>
+    <button id="ventilation" style="cursor: pointer;margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Ventilation</button>
+    <button id="airConditioning" style="cursor: pointer;margin-right: 0px;font-size: 20px; background-color: white; border-color: white; border-width: 0px"></button>
+    <button id="lighting" style="cursor: pointer;margin-right: 10px;color: red; font-weight: bold; font-size: 20px; background-color: white; border-color: white; border-width: 0px">Lighting</button>
+    <button id="buildingInfo" style="cursor: pointer;font-size: 20px; margin-right: 10px; background-color: white; border-color: white; border-width: 0px">Building Info</button>
+    <button id="info" style="cursor: pointer;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Team Info</button>
+<!--    <br></br>-->
+    <div id="container" style="width: 925px; height: 1600px">
+      <div id="lightingDesc" style="float: left; width: 300px;height: 1600px;">
+        <p><b>Glass Louvers</b><br/>Manufacturer: VIRACON<br/>No. of Blades: 3 rotating blades
+        <br/>Material: Tempered Glass<br/>Length: 2.4 m or 1m modules<br/>Rotation angle: 0° (closed) - 105°(open)
+        <br/>Transmittance: 0.14<br/>Compliance SGCC 1508, ANSI Z 97.1 1984</p>
+
+        <p><b>Motors</b><br/>Manufacturer: MAGFORCE<br/>No. of Louvers operated: Controls between 2 to 6 modules
+        <br/>DSP: 4560 – 300<br/>Voltage: 208 V, Single Phase<br/>Frequency: 60 Hz
+        <br/>Torque: 4500N</p>
+
+        <p><b>Sensor</b><br/>Manufacturer: PLC SENSOR Control Devices<br/>Model : Photosensor - PHS [0065-FFBA]
+        <br/>Input Voltage: 5,10,12,24 DC<br/>Power Consumption:24 mW<br/>Photodiode : Blue Enhanced
+        <br/>Time Response: Fixed 10 second Full Range<br/>Tolerance: 12%<br/>Temperature Range: -40° to 140°F (-40° to 60°C)
+        <br/>Compliance: NEC Class 2; ETL/UL 916; RoHS; Title 24</p>
+
+        <p style="margin-bottom:0;"><b>Daylight/lighting Design Strategies</b></p>
+        <ul style="margin : 0; padding-top:0;">
+            <li>Time of day controls for existing lighting zones will eliminate 30% electric lighting during unnecessary night and weekend hours.</li>
+            <li>Daylight responsive controls will eliminate 40% electric light in perimeter zones (where existing zones include perimeter lights only) - adding new sensors and/or time of day control</li>
+            <li>Occupancy responsive controls will eliminate 20% electric light in any unoccupied space (where dedicated lighting zones exist, such as closed rooms) - adding new occupancy sensors</li>
+            <li>Vacancy responsive controls, which require occupants to turn lights on but turn them off when they leave spaces, will eliminate x% electric light in both occupied and unoccupied space (where dedicated lighting zones exist, such as closed rooms) - adding new vacancy sensors</li>
+            <li>Shifting from task-ambient ceiling light to high efficiency ambient only (300 lux) with low energy task lights will eliminate 46% electric light – adding task light occupancy sensors or smart outlets</li>
+            <li>Individual control of task-ambient lighting for paper and computer based tasks will eliminate 43% electric light – adding individual dimming ballasts and occupant controls (with comfort zones)</li>
+            <li>Automated control of individual task-ambient lighting with compound (daylight, time of day and occupancy) controls will eliminate 70% electric light – adding individual dimming ballasts, daylight + occupancy sensors</li>
+            <li>Individual blind control for daylighting (without glare) will extend daylight responsive lighting control to eliminate 40% electric light in perimeter zones – adding daylight sensors and motorized control or knowledge based feedback</li>
+            <li>Individually ballasted ambient lighting, task lighting, automated blinds each with occupancy controls combined with knowledge based feedback will eliminate 64% electric light (all additions)</li>
+            <li>Knowledge based feedback linking daysim and thermal simulation with system expertise will eliminate x% electric light</li>
+        </ul>
+
+
+    </div>
+    <div style="overflow: scroll;position: absolute; width: 620px; height: 1600px; left: 325px">
+      <div class="relative" style="top: 10px">
+      <img src="lighting3.jpg" id="img1" width="600" height="400">
+      <img id="img2" src=lighting.jpg width="600" height="400">
+      </div>
+      <div class="relative1" style="top: 10px">Hover to see detailed facade drawings</div>
+      <br></br>
+      <div style="font-weight: bold; font-size: 18px">Lighting Strategies</div>
+      <div style="border-width: 1px; border-style: solid; border-color: black; width: 600px; height: 400px">
+        <img id = lightingStrategies src="lighting6.jpg" width= "600" height="400">
+      </div>
+      <button id="lStrateb1" style="text-align: center; background-color: red; border-color: black;cursor: pointer;width: 200px;height: 50px">Lighting Strategy 1</button>
+      <button id="lStrateb2" style="text-align: center; background-color: white; border-color: black;cursor: pointer;width: 194px;height: 50px">Lighting Strategy 2</button>
+      <button id="lStrateb3" style="text-align: center; background-color: white; border-color: black;cursor: pointer;width: 200px;height: 50px">Lighting Strategy 3</button>
+      <br></br>
+      <div style="font-weight: bold; font-size: 18px">Louvers</div>
+      <div style="border-color: black; width: 600px;border-width: 1px; border-style: solid">
+        <img src="lighting2.jpg" width="600">
+      </div>
+      <br></br>
+      <div style="border-width: 1px; border-style: solid; border-color: black; width: 600px">
+        <img id = lCELCS src="lighting7.jpg" width= "600">
+      </div>
+      <button id="lC" style="text-align: center; background-color: red; border-color: black;cursor: pointer;width: 200px;height: 50px">Lighting Components</button>
+      <button id="eL" style="text-align: center; background-color: white; border-color: black;cursor: pointer;width: 194px;height: 50px">External Louvers</button>
+      <button id="cS" style="text-align: center; background-color: white; border-color: black;cursor: pointer;width: 200px;height: 50px">Component Synthesis</button>
+    </div>
+    </div>
+
+
+
+    <br></br>
+    <div style="font-weight: bold; font-size: 18px; color: black">Louvers/Blinds Control</div>
+    <div class="zoom_outer" style="width: 925px;height: 467.29px">
+      <div id="zoom">
+        <img src="lighting10.jpg" alt="zoom" style="position: absolute; left:300px" width="600" height="467.29">
+      </div>
+    </div>
+
+
+<!--    <img id="img1" src=lighting3.jpg />-->
+
+
+    <script>
+      var img1 = document.getElementById("img1"),
+          img2 = document.getElementById("img2");
+
+      img1.onmouseenter = function(){
+        img2.style.display = "block";}
+
+      img1.onmouseout = function(){
+        img2.style.display = "none";}
+    </script>
+    <script>
+      var ls1 = document.getElementById("lStrateb1");
+      var ls2 = document.getElementById("lStrateb2");
+      var ls3 = document.getElementById("lStrateb3");
+      var lC1 = document.getElementById("lC");
+      var eL1 = document.getElementById("eL");
+      var cS1 = document.getElementById("cS");
+
+      ls1.onclick = function(){
+        document.getElementById("lightingStrategies").src = "lighting6.jpg";
+        ls1.style.backgroundColor="red"
+        ls2.style.backgroundColor="white"
+        ls3.style.backgroundColor="white"
+      }
+
+      ls2.onclick = function(){
+        document.getElementById("lightingStrategies").src = "lighting5.jpg";
+        ls1.style.backgroundColor="white"
+        ls2.style.backgroundColor="red"
+        ls3.style.backgroundColor="white"
+      }
+
+      ls3.onclick = function(){
+        document.getElementById("lightingStrategies").src = "lighting4.jpg";
+        ls1.style.backgroundColor="white"
+        ls2.style.backgroundColor="white"
+        ls3.style.backgroundColor="red"
+      }
+      lC1.onclick = function(){
+        document.getElementById("lCELCS").src = "lighting7.jpg";
+        lC1.style.backgroundColor="red"
+        eL1.style.backgroundColor="white"
+        cS1.style.backgroundColor="white"
+      }
+
+      eL1.onclick = function(){
+        document.getElementById("lCELCS").src = "lighting8.jpg";
+        lC1.style.backgroundColor="white"
+        eL1.style.backgroundColor="red"
+        cS1.style.backgroundColor="white"
+      }
+
+      cS1.onclick = function(){
+        document.getElementById("lCELCS").src = "lighting9.jpg";
+        lC1.style.backgroundColor="white"
+        eL1.style.backgroundColor="white"
+        cS1.style.backgroundColor="red"
+      }
+
+
+    </script>
+    <script>
+      var scale = 1,
+        panning = false,
+        pointX = 0,
+        pointY = 0,
+        start = { x: 0, y: 0 },
+        zoom = document.getElementById("zoom");
+      function setTransform() {
+        zoom.style.transform = "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+      }
+      zoom.onmousedown = function (e) {
+        e.preventDefault();
+        start = { x: e.clientX - pointX, y: e.clientY - pointY };
+        panning = true;
+      }
+      zoom.onmouseup = function (e) {
+        panning = false;
+      }
+      zoom.onmousemove = function (e) {
+        e.preventDefault();
+        if (!panning) {
+          return;
+        }
+        pointX = (e.clientX - start.x);
+        pointY = (e.clientY - start.y);
+        setTransform();
+      }
+      zoom.onwheel = function (e) {
+        e.preventDefault();
+        var xs = (e.clientX - pointX) / scale,
+          ys = (e.clientY - pointY) / scale,
+          delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
+        (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+        pointX = e.clientX - xs * scale;
+        pointY = e.clientY - ys * scale;
+        setTransform();
+      }
+    </script>
+
+    <script>
+      function changeColor (v1,v2,v3,v4,v5,v6,v7){
+    v1.style.color = "red";
+    v1.style.fontWeight = "bold"
+    v2.style.color = "black";
+    v2.style.fontWeight = "normal"
+    v3.style.color = "black";
+    v3.style.fontWeight = "normal"
+    v4.style.color = "black";
+    v4.style.fontWeight = "normal"
+    v5.style.color = "black";
+    v5.style.fontWeight = "normal"
+    v6.style.color = "black";
+    v6.style.fontWeight = "normal"
+    v7.style.color = "black";
+    v7.style.fontWeight = "normal"
+}
+
+var homeTitle = document.getElementById("home")
+var heatingTitle = document.getElementById("heating")
+var ventilationTitle = document.getElementById("ventilation")
+var airContioningTitle = document.getElementById("airConditioning")
+var lightingTitle = document.getElementById("lighting")
+var buildingInfoTitle = document.getElementById("buildingInfo")
+var infoTitle = document.getElementById("info")
+
+document.getElementById("home").onclick = function(){
+    changeColor(homeTitle, heatingTitle, ventilationTitle, airContioningTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "index.html"
+}
+document.getElementById("heating").onclick = function(){
+    changeColor(heatingTitle,homeTitle, ventilationTitle, airContioningTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "HeatingTwoPanel.html"
+}
+document.getElementById("ventilation").onclick = function(){
+    changeColor(ventilationTitle, homeTitle, heatingTitle, airContioningTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "Ventilation.html"
+}
+document.getElementById("airConditioning").onclick = function(){
+    changeColor(airContioningTitle, homeTitle, heatingTitle, ventilationTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "AirConditioning.html"
+}
+document.getElementById("lighting").onclick = function(){
+    changeColor(lightingTitle, homeTitle, heatingTitle, ventilationTitle, airContioningTitle,buildingInfoTitle, infoTitle)
+    window.location.href = "lighting page.html"
+}
+
+document.getElementById("buildingInfo").onclick = function(){
+    changeColor(buildingInfoTitle, infoTitle, homeTitle, heatingTitle, ventilationTitle, airContioningTitle, lightingTitle)
+    window.location.href = "BuildingInfo.html"
+}
+
+document.getElementById("info").onclick = function(){
+    changeColor(infoTitle, homeTitle, heatingTitle, ventilationTitle, airContioningTitle, buildingInfoTitle, lightingTitle)
+    window.location.href = "Info.html"
+}
+    </script>
+  </body>
+</html>

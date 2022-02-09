@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heating</title>
+    <link rel="stylesheet" href="mag.css">
+</head>
+<body>
+    <button id="home" style="cursor: pointer;margin-left: 10px;color: black; margin-right: 30px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Home</button>
+    <button id="heating" style="cursor: pointer;margin-right: 30px;color: red;font-weight: bold; font-size: 20px; background-color: white; border-color: white; border-width: 0px">Heating</button>
+    <button id="ventilation" style="cursor: pointer;margin-right: 30px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Ventilation</button>
+    <button id="airConditioning" style="cursor: pointer;margin-right: 30px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Air Conditioning</button>
+    <button id="lighting" style="cursor: pointer;margin-right: 30px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Lighting</button>
+    <button id="buildingInfo" style="cursor: pointer;font-size: 20px; margin-right: 28px; background-color: white; border-color: white; border-width: 0px">Building Info</button>
+    <button id="info" style="cursor: pointer;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Team Info</button>
+    <br></br>
+
+    <div id="imageHover"></div>
+    <!--    <img src="http://static.gigapan.com/gigapans0/73790/images/73790-936x360.jpg">-->
+    <div id="cX"></div>
+    <div id="cY"></div>
+    <span>Manufacturer's Information: </span>
+    <span id="manI">Standby</span>
+    <div>Installation Date: Sonething</div>
+    <div>System Description: Something</div>
+    <div>Physical location: add images and drawing below</div>
+<!--    https://www.w3schools.com/css/css_positioning.asp-->
+    <div id="pL"><img src="http://static.gigapan.com/gigapans0/73790/images/73790-936x360.jpg" id="thePL"></div>
+    <br></br>
+    <div>Configuration Diagram</div>
+    <button id="magOn">Zoom In</button>
+    <button id="magOff">Zoom Out</button>
+    <br></br>
+    <div class="imgMag">
+    <img src="http://static.gigapan.com/gigapans0/73790/images/73790-936x360.jpg" id="conFig">
+    </div>
+    <br></br>
+    <div>Current or historic operation schedule</div>
+    <br></br>
+    <div>Current or historic system performance</div>
+    <!--    <div style="font-size: 10px">The Solar House and Intelligent Workplace at Carnegie Mellon University, Pittsburgh, PA</div>-->
+    <!--    <div style="font-size: 10px">Source: http://gigapan.com/gigapans?tags=intelligent</div>-->
+    <script src="HeatingJS.js"></script>
+<!--    <script>if (magControl==2){magnify("conFig", 1.5)}</script>-->
+</body>
+</html>

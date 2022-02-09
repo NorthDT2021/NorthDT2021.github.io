@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Info</title>
+</head>
+<body>
+    <button id="home" style="cursor: pointer;margin-left: 10px; margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Home</button>
+    <button id="heating" style="cursor: pointer;margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Heating & Air-Conditioning</button>
+    <button id="ventilation" style="cursor: pointer;margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Ventilation</button>
+    <button id="airConditioning" style="cursor: pointer;margin-right: 0px;font-size: 20px; background-color: white; border-color: white; border-width: 0px"></button>
+    <button id="lighting" style="cursor: pointer;margin-right: 10px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Lighting</button>
+    <button id="buildingInfo" style="cursor: pointer;font-size: 20px; margin-right: 10px; background-color: white; border-color: white; border-width: 0px">Building Info</button>
+    <button id="info" style="cursor: pointer;font-size: 20px; color: red;font-weight: bold; background-color: white; border-color: white; border-width: 0px">Team Info</button>
+    <br></br>
+    <div id="container" style="width: 900px">
+      <div id="haipei" style="position:absolute; border-width: 1px;border-style: solid;border-color: black;width: 300px;height: 300px">
+          <img src="https://images.squarespace-cdn.com/content/v1/54c2a5c7e4b043776a0b0036/1632771796875-WLT4X11BH0Y3QV6J48EO/Nicole+Postnikov.jpg?format=300w">
+          <div style="position: absolute; top: 300px; left: 110px">Haipei Bie</div>
+          <div style="position: absolute; top: 320px; left: 117px">MSBPD</div>
+      </div>
+      <div id="jamie" style="left: 320px; position:absolute; border-width: 1px;border-style: solid;border-color: black;width: 300px;height: 300px">
+          <img src="https://images.squarespace-cdn.com/content/v1/54c2a5c7e4b043776a0b0036/1600705170222-ZN5P9Z0FW673JX39ZEXF/Nicole+Postnikov.jpg?format=300w">
+          <div style="position: absolute; top: 300px; left: 115px">Jamie Ho</div>
+          <div style="position: absolute; top: 320px; left: 119px">MSBPD</div>
+      </div>
+      <div id="guanzhou" style="left: 640px; position:absolute; border-width: 1px;border-style: solid;border-color: black;width: 300px;height: 300px">
+          <img src="https://images.squarespace-cdn.com/content/v1/54c2a5c7e4b043776a0b0036/1643300570885-14X3B29NQTB23KWCX27Z/Youngjoo+Son.jpg?format=300w">
+          <div style="position: absolute; top: 300px; left: 110px">Guanzhou Ji</div>
+          <div style="position: absolute; top: 320px; left: 117px">PhD-BPD</div>
+      </div>
+
+    </div>
+
+    <script>
+        function changeColor (v1,v2,v3,v4,v5,v6,v7){
+    v1.style.color = "red";
+    v1.style.fontWeight = "bold"
+    v2.style.color = "black";
+    v2.style.fontWeight = "normal"
+    v3.style.color = "black";
+    v3.style.fontWeight = "normal"
+    v4.style.color = "black";
+    v4.style.fontWeight = "normal"
+    v5.style.color = "black";
+    v5.style.fontWeight = "normal"
+    v6.style.color = "black";
+    v6.style.fontWeight = "normal"
+    v7.style.color = "black";
+    v7.style.fontWeight = "normal"
+}
+
+var homeTitle = document.getElementById("home")
+var heatingTitle = document.getElementById("heating")
+var ventilationTitle = document.getElementById("ventilation")
+var airContioningTitle = document.getElementById("airConditioning")
+var lightingTitle = document.getElementById("lighting")
+var buildingInfoTitle = document.getElementById("buildingInfo")
+var infoTitle = document.getElementById("info")
+
+document.getElementById("home").onclick = function(){
+    changeColor(homeTitle, heatingTitle, ventilationTitle, airContioningTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "index.html"
+}
+document.getElementById("heating").onclick = function(){
+    changeColor(heatingTitle,homeTitle, ventilationTitle, airContioningTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "HeatingTwoPanel.html"
+}
+document.getElementById("ventilation").onclick = function(){
+    changeColor(ventilationTitle, homeTitle, heatingTitle, airContioningTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "Ventilation.html"
+}
+document.getElementById("airConditioning").onclick = function(){
+    changeColor(airContioningTitle, homeTitle, heatingTitle, ventilationTitle, lightingTitle, buildingInfoTitle, infoTitle)
+    window.location.href = "AirConditioning.html"
+}
+document.getElementById("lighting").onclick = function(){
+    changeColor(lightingTitle, homeTitle, heatingTitle, ventilationTitle, airContioningTitle,buildingInfoTitle, infoTitle)
+    window.location.href = "lighting page.html"
+}
+
+document.getElementById("buildingInfo").onclick = function(){
+    changeColor(buildingInfoTitle, infoTitle, homeTitle, heatingTitle, ventilationTitle, airContioningTitle, lightingTitle)
+    window.location.href = "BuildingInfo.html"
+}
+
+document.getElementById("info").onclick = function(){
+    changeColor(infoTitle, homeTitle, heatingTitle, ventilationTitle, airContioningTitle, buildingInfoTitle, lightingTitle)
+    window.location.href = "Info.html"
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+	</head>
+<body>
+    <img src="lighting5.jpg" id="myImage" width="1200" height="800">
+    <input type="button" onclick="changeImage()" value="Change" />
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("lighting5.jpg")) {
+                image.src = "lighting6.jpg";
+            }
+            else {
+                image.src = "lighting5.jpg";
+            }
+        }
+    </script>
+<p><strong>Note:</strong> Click on the "Change" button to Change </p>
+</body>
+</html>

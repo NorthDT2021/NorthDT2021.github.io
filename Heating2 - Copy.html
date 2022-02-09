@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heating2</title>
+</head>
+<body>
+    <button id="home" style="cursor: pointer; margin-left: 10px;color: black; margin-right: 30px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Home</button>
+    <button id="heating" style="cursor: pointer;margin-right: 30px;color: red;font-weight: bold; font-size: 20px; background-color: white; border-color: white; border-width: 0px">Heating</button>
+    <button id="ventilation" style="cursor: pointer;margin-right: 30px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Ventilation</button>
+    <button id="airConditioning" style="cursor: pointer;margin-right: 30px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Air Conditioning</button>
+    <button id="lighting" style="cursor: pointer;margin-right: 30px;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Lighting</button>
+    <button id="buildingInfo" style="cursor: pointer;font-size: 20px; margin-right: 28px; background-color: white; border-color: white; border-width: 0px">Building Info</button>
+    <button id="info" style="cursor: pointer;font-size: 20px; background-color: white; border-color: white; border-width: 0px">Team Info</button>
+    <br></br>
+    <button id="rBS" style="float: left;color:white; font-weight: bold; margin-right: 20px; text-align: center; background-color: black; color: white; border-color: black;cursor: pointer;width: 200px;height: 50px">Water Mullions</button>
+    <button id="aBS" style="text-align: center; background-color: white; border-color: black;cursor: pointer;width: 200px;background-color: white; color: black;height: 50px">Radiant Panels</button>
+    <div id="container" style="width: 925px; height: 410px">
+      <div id="rBSInfo" style="float: left; width: 300px">
+        <p id="para1">Manufacturer’s information: 11111</p>
+        <p id="para2">Installation date: 1/11/1111<p/>
+        <p id="para3">System Description: components<p/>
+        <p id="para4">Functions: etc.<p/>
+        <p id="para5">Physical location: images and drawings should be included</p>
+      </div>
+      <div style="border-width: 1px;width: 600px;height: 400px; position: relative; top: 20px; border-style: solid; border-color: black; float:right;">
+      <img src="lighting3.jpg" id="img1" width="600" height="400" style="position: absolute">
+      <img id="img2" src=lighting.jpg width="600" height="400" style="position: absolute; display: none">
+    </div>
+    </div>
+    <div style="left: 322px;position: relative; top: 10px">Hover to see detailed facade drawings</div>
+    <br></br>
+    <div id="hidden" style="font-weight: bold; font-size: 18px">Heating......</div>
+    <div id="container1" style="width: 925px; height: 410px">
+      <div>
+
+      </div>
+    </div>
+    <br></br>
+    <div style="font-weight: bold; font-size: 18px">More Heating...</div>
+    <div id="container1" style="width: 925px; height: 410px">
+      <div>
+
+      </div>
+    </div>
+    <br></br>
+    <div style="font-weight: bold; font-size: 18px">Moooore!</div>
+    <div id="container2" style="width: 925px; height: 410px">
+      <div>
+
+      </div>
+    </div>
+
+
+
+    <script>
+      var img1 = document.getElementById("img1"),
+          img2 = document.getElementById("img2");
+
+      img1.onmouseenter = function(){
+        img2.style.display = "block";}
+
+      img1.onmouseout = function(){
+        img2.style.display = "none";}
+    </script>
+    <script>
+      var rBS1 = document.getElementById("rBS");
+      var aBS1 = document.getElementById("aBS");
+      // var ls3 = document.getElementById("lStrateb3");
+      // var lC1 = document.getElementById("lC");
+      // var eL1 = document.getElementById("eL");
+      // var cS1 = document.getElementById("cS");
+
+      rBS1.onclick = function(){
+        document.getElementById("img1").src = "lighting3.jpg";
+        document.getElementById("img2").src = "lighting.jpg";
+        rBS1.style.backgroundColor="black"
+        aBS1.style.backgroundColor="white"
+        rBS1.style.fontWeight = "bold"
+        aBS1.style.fontWeight = "normal"
+        rBS1.style.color = "white"
+        aBS1.style.color = "black"
+        document.getElementById("para1").innerHTML = "Manufacturer’s information: 11111"
+        document.getElementById("para2").innerHTML = "Installation date: 1/11/1111"
+        document.getElementById("para3").innerHTML = "System Description: components"
+        document.getElementById("para4").innerHTML = "Functions: etc."
+        document.getElementById("para5").innerHTML = "Physical location: images and drawings should be included"
+      }
+
+      aBS1.onclick = function(){
+        document.getElementById("img1").src = "lighting7.jpg";
+        document.getElementById("img2").src = "lighting8.jpg";
+        rBS1.style.backgroundColor="white"
+        aBS1.style.backgroundColor="black"
+        rBS1.style.fontWeight = "normal"
+        aBS1.style.fontWeight = "bold"
+        rBS1.style.color = "black"
+        aBS1.style.color = "white"
+        document.getElementById("para1").innerHTML = "Manufacturer’s information: CD Projekt Red"
+        document.getElementById("para2").innerHTML = "Installation date: 12/10/2077"
+        document.getElementById("para3").innerHTML = "System Description: Silenced Techtronika SPT32 Grad for life"
+        document.getElementById("para4").innerHTML = "Functions: Armor Piercing Rounds"
+        document.getElementById("para5").innerHTML = "Physical location: Night City"
+      }
+
+      // ls3.onclick = function(){
+      //   document.getElementById("lightingStrategies").src = "lighting4.jpg";
+      //   ls1.style.backgroundColor="white"
+      //   ls2.style.backgroundColor="white"
+      //   ls3.style.backgroundColor="red"
+      // }
+      // lC1.onclick = function(){
+      //   document.getElementById("lCELCS").src = "lighting7.jpg";
+      //   lC1.style.backgroundColor="red"
+      //   eL1.style.backgroundColor="white"
+      //   cS1.style.backgroundColor="white"
+      // }
+      //
+      // eL1.onclick = function(){
+      //   document.getElementById("lCELCS").src = "lighting8.jpg";
+      //   lC1.style.backgroundColor="white"
+      //   eL1.style.backgroundColor="red"
+      //   cS1.style.backgroundColor="white"
+      // }
+      //
+      // cS1.onclick = function(){
+      //   document.getElementById("lCELCS").src = "lighting9.jpg";
+      //   lC1.style.backgroundColor="white"
+      //   eL1.style.backgroundColor="white"
+      //   cS1.style.backgroundColor="red"
+      // }
+    document.getElementById("hidden").onclick = function(){
+          window.location.href = "Heating.html"
+    }
+
+    </script>
+    <script src="Heating2JS.js"></script>
+</body>
+</html>
